@@ -1,19 +1,17 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-	int i,n;
-	cout<<"enter the value of n"<<endl;
+	int n,count=0;
+	cout<<"Enter a no. ";
 	cin>>n;
-	for(i=1;i<=n;i++)
+	for(int i=1;i<=n;i++)
 	{
-		if(n%1==n&&n%i==n)
-		{
-			cout<<n<<"is prime number"<<endl;
-		}
-		else{
-			cout<<"not prime no.";
-		}
+		if(n%i==0)
+		count++;
 	}
+	if(count==2)
+	cout<<"It's a Prime\n";
+	else cout<<"It's not a Prime\n";
 	return 0;
 }
