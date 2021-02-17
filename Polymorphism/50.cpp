@@ -1,4 +1,4 @@
-//Clling overrided method
+//Calling overrided method
 #include<iostream>
 using namespace std;
 class BasicCar
@@ -18,4 +18,5 @@ int main()
 {
 	BasicCar *p=new AdvanceCar();
 	p->start();
+	return 0;
 }
